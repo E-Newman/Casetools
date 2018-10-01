@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-09-17" view-index="0" gantt-divider-location="396" resource-divider-location="300" version="2.8.9" locale="ru">
+    <description/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Название" width="189" order="0"/>
+        <field id="tpd4" name="Дата начала" width="107" order="1"/>
+        <field id="tpd5" name="Дата окончания" width="96" order="2"/>
+        <option id="taskLabelUp" value="resources"/>
+        <timeline><![CDATA[21,5,11,23,26,1,19,12,0]]></timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Имя" width="210" order="0"/>
+        <field id="1" name="Стандартная роль" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Составление плана проекта" color="#8cb6ce" meeting="false" start="2018-09-10" duration="5" complete="100" thirdDate="2018-09-17" thirdDate-constraint="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" name="Планирование распределения времени и ресурсов" color="#8cb6ce" meeting="false" start="2018-09-17" duration="3" complete="100" thirdDate="2018-09-10" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Спецификация требований" color="#8cb6ce" meeting="false" start="2018-09-20" duration="13" complete="0" thirdDate="2018-09-10" thirdDate-constraint="0" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="Проектирование клиентского приложения для смартфона" color="#8cb6ce" meeting="false" start="2018-10-09" duration="15" complete="0" thirdDate="2018-09-10" thirdDate-constraint="0" expand="true">
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="Проектирование клиентского приложения для Smart TV" color="#8cb6ce" meeting="false" start="2018-10-09" duration="15" complete="0" thirdDate="2018-09-10" thirdDate-constraint="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="27" name="Завершение этапа проектирования" color="#8cb6ce" meeting="true" start="2018-10-30" duration="0" complete="0" thirdDate="2018-08-27" thirdDate-constraint="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="19" name="Кодирование" color="#8cb6ce" meeting="false" start="2018-10-30" duration="10" complete="0" thirdDate="2018-09-10" thirdDate-constraint="0" expand="true">
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="21" name="Тестирование и отладка" color="#8cb6ce" meeting="false" start="2018-11-13" duration="9" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="31" name="Завершение этапа программной реализации" color="#8cb6ce" meeting="true" start="2018-11-26" duration="0" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true">
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" name="Написание руководства" color="#8cb6ce" meeting="false" start="2018-11-26" duration="5" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true">
+            <depend id="33" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="33" name="Завершение работы над проектом" color="#8cb6ce" meeting="true" start="2018-12-03" duration="0" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true">
+            <depend id="26" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="26" name="Аттестация" color="#8cb6ce" meeting="false" start="2018-12-03" duration="10" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Павловский Владислав " function="Default:1" contacts="pvv.222@gmail.com" phone=""/>
+        <resource id="1" name="Паренченков Евгений" function="SoftwareDevelopment:2" contacts="parenche@cs.karelia.ru" phone=""/>
+        <resource id="2" name="Тришкин Антон " function="SoftwareDevelopment:2" contacts="anton_trishkin@mail.ru" phone=""/>
+        <resource id="3" name="Соголовский Александр " function="SoftwareDevelopment:3" contacts="tweak98177@gmail.com" phone=""/>
+        <resource id="4" name="Алексеев Владислав " function="SoftwareDevelopment:2" contacts="aealonerofl@mail.ru" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:1" responsible="true" load="30.0"/>
+        <allocation task-id="12" resource-id="0" function="Default:1" responsible="true" load="70.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="0.0"/>
+        <allocation task-id="19" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="26" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="12" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="19" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="26" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="50.0"/>
+        <allocation task-id="12" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="50.0"/>
+        <allocation task-id="19" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="50.0"/>
+        <allocation task-id="21" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="50.0"/>
+        <allocation task-id="23" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="26" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="0.0"/>
+        <allocation task-id="5" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="0.0"/>
+        <allocation task-id="19" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="26" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
