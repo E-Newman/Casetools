@@ -2,3 +2,8 @@ git clone https://github.com/E-Newman/Casetools.git
 git checkout -b master
 touch report
 emcas lab1make/Modified
+git log
+git tag
+git tag -a v.0.5 -m version 0.5
+git show v.0.5
+echo git show v.0.5 > README.md
