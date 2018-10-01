@@ -1,3 +1,4 @@
 git clone https://github.com/E-Newman/Casetools.git
-git checkout -b "master"
+git checkout -b master
 touch report
+emcas lab1make/Modified
