@@ -1,9 +1,64 @@
+Клонирование удалённого репозитория:
+
 git clone https://github.com/E-Newman/Casetools.git
+
+Создать ветку:
+
 git checkout -b master
+
+Создать файл:
+
 touch report
-emcas lab1make/Modified
+
+Создать и изменить файл:
+
+vi lab1make/Modified
+
+
+История изменений:
+
 git log
+
+Список меток:
+
 git tag
+
+Добавить метку:
+
 git tag -a v.0.5 -m version 0.5
+
+Показать информацию о метке:
+
 git show v.0.5
-echo git show v.0.5 > README.md
+
+Дописать сведения о метке в README.md:
+
+git show v.0.5 > README.md
+
+История коммитов:
+
+commit 8046a1414884a1e55b00a99cbfeac1fc8bbb0fb3
+Author: Evgeny Parenchenkov <19parenchenkov98@gmail.com>
+Date:   Mon Oct 1 16:31:45 2018 +0300
+
+    Add final stages
+
+commit c60c24257820df8bc628d6bc2b09506269c7952d
+Author: Evgenii Parenchenkov <parenche@cs.karelia.ru>
+Date:   Mon Oct 1 13:05:43 2018 +0300
+
+    Add info files
+
+commit fbd5128a47c8e72dd58aa642c3fdd62ace618a12
+Author: Evgenii Parenchenkov <parenche@cs.karelia.ru>
+Date:   Mon Oct 1 12:56:34 2018 +0300
+
+    Add tasks 1 & 2
+
+Подготовить коммит:
+
+git commit -m "My message"
+
+Отправить коммит в репозиторий:
+
+git push
